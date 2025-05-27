@@ -1,12 +1,18 @@
 import Square from './Square';
 import calculateWinner from './winnerFunction';
 
-function Board({ isXNext, squares, handlePlay }) {
+function Board({ isXNext, squares, handlePlay}) {
     const result = calculateWinner(squares);
 
-    const playerStatus = result
-        ? `Winner: ${result}`
-        : `Player's turn: ${isXNext ? 'X' : 'O'}`;
+    let playerStatus = '';
+
+    if (!result && squares.every(square => square !== null)) {
+        playerStatus = "It's a Draw";
+    } else {
+        playerStatus = result
+            ? `Winner: ${result}`
+            : `Player's turn: ${isXNext ? 'X' : 'O'}`;
+    }
 
     const handleClick = (i) => {
         if (squares[i] != null || result) {
