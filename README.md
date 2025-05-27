@@ -21,7 +21,7 @@ A classic game of **Tic Tac Toe**, built with modern **React**. This project fea
 - ⚛️ React (Functional Components + Hooks)
 - 🧠 JavaScript (ES6+)
 - 🎨 Tailwind CSS
-- 💡 Vite / Create React App *(whichever you're using)*
+- 💡 Vite
 
 ---
 
@@ -38,6 +38,8 @@ A classic game of **Tic Tac Toe**, built with modern **React**. This project fea
 
 - 🔍 Clear separation of concerns: UI vs logic
 
+---
+
 ## Things I got to learn from this project
 - State management with useState
 
@@ -48,6 +50,8 @@ A classic game of **Tic Tac Toe**, built with modern **React**. This project fea
 - Component-based architecture
 
 - Game logic integration in UI
+
+---
 
 ## Getting started
 - git clone https://github.com/Ashik-2000/Tic-Tac-Toe_using_React.git
