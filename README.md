@@ -2,11 +2,14 @@
 
 A classic game of **Tic Tac Toe**, built with modern **React**. This project features **time travel**, clean state management, and a minimal, responsive UI — ideal for showcasing fundamental React concepts like component composition, lifting state up, immutability, and conditional rendering.
 
-## Component Tree
-  Game
-   ├── Board
-   │    ├── Square (x9)
-   └── History
+## 🧩 Component Tree
+
+```text
+Game
+├── Board
+│   └── Square (x9)
+└── History
+```
 
 ---
 
@@ -54,8 +57,10 @@ A classic game of **Tic Tac Toe**, built with modern **React**. This project fea
 ---
 
 ## Getting started
-- git clone https://github.com/Ashik-2000/Tic-Tac-Toe_using_React.git
-- cd react-tic-tac-toe
-- npm install
-- npm run dev
+```bash
+-> git clone https://github.com/Ashik-2000/Tic-Tac-Toe_using_React.git
+-> cd react-tic-tac-toe
+-> npm install
+-> npm run dev
+```
 
