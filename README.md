@@ -50,8 +50,8 @@ A classic game of **Tic Tac Toe**, built with modern **React**. This project fea
 - Game logic integration in UI
 
 ## Getting started
-git clone https://github.com/your-username/react-tic-tac-toe.git
-cd react-tic-tac-toe
-npm install
-npm run dev
+- git clone https://github.com/Ashik-2000/Tic-Tac-Toe_using_React.git
+- cd react-tic-tac-toe
+- npm install
+- npm run dev
 
