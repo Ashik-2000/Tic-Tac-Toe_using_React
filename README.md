@@ -1,12 +1,68 @@
-# React + Vite
+# 🧠 React Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A classic game of **Tic Tac Toe**, built with modern **React**. This project features **time travel**, clean state management, and a minimal, responsive UI — ideal for showcasing fundamental React concepts like component composition, lifting state up, immutability, and conditional rendering.
 
-Currently, two official plugins are available:
+## 🧩 Component Tree
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```text
+Game
+├── Board
+│   └── Square (x9)
+└── History
+```
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+![screenshot](./screenshot.png)
+
+---
+
+## 🛠️ Built With
+
+- ⚛️ React (Functional Components + Hooks)
+- 🧠 JavaScript (ES6+)
+- 🎨 Tailwind CSS
+- 💡 Vite
+
+---
+
+## Features
+- ✅ Fully interactive 3x3 Tic Tac Toe board
+
+- 🔁 Time-travel: Go back to any previous game state
+
+- 🧠 Winner detection using core logic
+
+- 🤝 Draw detection using clean and scalable logic
+
+- ♻️ Immutability with clean state updates
+
+- 🎨 Minimal and responsive UI with Tailwind CSS
+
+- 🔍 Clear separation of concerns: UI vs logic
+
+---
+
+## Things I got to learn from this project
+- State management with useState
+
+- Lifting state up for shared logic
+
+- Immutability principles in React
+
+- Component-based architecture
+
+- Game logic integration in UI
+
+---
+
+## Getting started
+```bash
+-> git clone https://github.com/Ashik-2000/Tic-Tac-Toe_using_React.git
+-> cd react-tic-tac-toe
+-> npm install
+-> npm run dev
+```
+
