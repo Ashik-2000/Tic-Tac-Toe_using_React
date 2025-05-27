@@ -22,15 +22,15 @@ export default function Game() {
     };
 
     return (
-        <div>
+        <div className="flex gap-10">
             <div>
                 <Board
                     isXNext={isXNext}
                     squares={currentSquares}
-                    onPlay={handlePlay}
+                    handlePlay={handlePlay}
                 />
             </div>
-            <div>
+            <div className="mt-1">
                 <History history={history} jumpTo={jumpTo} />
             </div>
         </div>

@@ -1,7 +1,7 @@
 import Square from './Square';
 import calculateWinner from './winnerFunction';
 
-function Board({ isXNext, squares, onPlay }) {
+function Board({ isXNext, squares, handlePlay }) {
     const result = calculateWinner(squares);
 
     const playerStatus = result
@@ -14,7 +14,7 @@ function Board({ isXNext, squares, onPlay }) {
         }
         const nextSquares = [...squares];
         isXNext ? (nextSquares[i] = 'X') : (nextSquares[i] = 'O');
-        onPlay(nextSquares);
+        handlePlay(nextSquares);
     };
 
     return (
