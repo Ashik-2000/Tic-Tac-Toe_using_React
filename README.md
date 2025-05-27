@@ -33,7 +33,9 @@ Game
 
 - 🔁 Time-travel: Go back to any previous game state
 
-- 🧠 Match Result Calculation using core logic
+- 🧠 Winner detection using core logic
+
+- 🤝 Draw detection using clean and scalable logic
 
 - ♻️ Immutability with clean state updates
 
