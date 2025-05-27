@@ -1,82 +1,38 @@
 import { useState } from 'react';
+import Board from './Board';
+import History from './History';
 
-function Square({ value, handleClick }) {
-    return (
-        <>
-            <button
-                className="m-1 h-12 w-12 border border-gray-400 bg-gray-100 text-xl leading-9"
-                onClick={handleClick}
-            >
-                {value}
-            </button>
-        </>
-    );
-}
-
-function App() {
-    const [squares, setSquares] = useState(Array(9).fill(null));
+export default function Game() {
+    const [history, setHistory] = useState([Array(9).fill(null)]);
     const [isXNext, setIsXNext] = useState(true);
+    const [currentStep, setCurrentStep] = useState(0);
 
-    const result = calculateWinner(squares);
-    console.log(result);
-    const playerStatus = result
-        ? `Winner: ${result}`
-        : `Player's turn: ${isXNext ? 'X' : 'O'}`;
+    const currentSquares = history[currentStep];
 
-    const handleClick = (i) => {
-        if (squares[i] != null || result) {
-            return;
-        }
-        const nextSquares = [...squares];
-        isXNext ? (nextSquares[i] = 'X') : (nextSquares[i] = 'O');
-        setSquares(nextSquares);
+    const handlePlay = (nextSquares) => {
         setIsXNext(!isXNext);
+        const nextHistory = [...history.slice(0, currentStep + 1), nextSquares];
+        setHistory(nextHistory);
+        setCurrentStep(nextHistory.length - 1);
+    };
+
+    const jumpTo = (step) => {
+        setCurrentStep(step);
+        setIsXNext(step % 2 === 0);
     };
 
     return (
-        <>
-            <h1 className="m-1 text-xl">{playerStatus}</h1>
-            <div className="flex">
-                <Square value={squares[0]} handleClick={() => handleClick(0)} />
-                <Square value={squares[1]} handleClick={() => handleClick(1)} />
-                <Square value={squares[2]} handleClick={() => handleClick(2)} />
+        <div>
+            <div>
+                <Board
+                    isXNext={isXNext}
+                    squares={currentSquares}
+                    onPlay={handlePlay}
+                />
             </div>
-            <div className="flex">
-                <Square value={squares[3]} handleClick={() => handleClick(3)} />
-                <Square value={squares[4]} handleClick={() => handleClick(4)} />
-                <Square value={squares[5]} handleClick={() => handleClick(5)} />
+            <div>
+                <History history={history} jumpTo={jumpTo} />
             </div>
-            <div className="flex">
-                <Square value={squares[6]} handleClick={() => handleClick(6)} />
-                <Square value={squares[7]} handleClick={() => handleClick(7)} />
-                <Square value={squares[8]} handleClick={() => handleClick(8)} />
-            </div>
-        </>
+        </div>
     );
-}
-
-export default App;
-
-function calculateWinner(squares) {
-    const lines = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6],
-    ];
-    for (let i = 0; i < lines.length; i++) {
-        const [a, b, c] = lines[i];
-        if (
-            squares[a] &&
-            squares[a] === squares[b] &&
-            squares[a] === squares[c]
-        ) {
-            return squares[a];
-        }
-    }
-    return null;
 }
