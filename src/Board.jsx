@@ -1,4 +1,4 @@
-import Square from './assets/Square';
+import Square from './Square';
 import calculateWinner from './winnerFunction';
 
 function Board({ isXNext, squares, onPlay }) {
