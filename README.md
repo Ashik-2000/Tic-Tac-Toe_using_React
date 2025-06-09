@@ -4,7 +4,7 @@ A classic game of **Tic Tac Toe**, built with modern **React**. This project fea
 
 ## 🚀 Live URL
 
-tic-tac-toe-using-react-7haabkzi1-ashiks-projects-8da90b6d.vercel.app
+[tic-tac-toe-using-react-7haabkzi1-ashiks-projects-8da90b6d.vercel.app](https://tic-tac-toe-using-react-smoky.vercel.app/)
 
 ---
 
