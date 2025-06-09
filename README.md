@@ -28,7 +28,8 @@ Game
 
 ---
 
-## Features
+## ✨ Features
+
 - ✅ Fully interactive 3x3 Tic Tac Toe board
 
 - 🔁 Time-travel: Go back to any previous game state
@@ -47,7 +48,8 @@ Game
 
 ---
 
-## Things I got to learn from this project
+## 📚 Things I got to learn from this project
+
 - State management with useState
 
 - Lifting state up for shared logic
@@ -60,7 +62,8 @@ Game
 
 ---
 
-## Getting started
+## ⚙️ Getting started
+
 ```bash
 -> git clone https://github.com/Ashik-2000/Tic-Tac-Toe_using_React.git
 -> cd react-tic-tac-toe
