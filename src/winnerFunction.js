@@ -16,7 +16,7 @@ function calculateWinner(squares) {
             squares[a] === squares[b] &&
             squares[a] === squares[c]
         ) {
-            return squares[a];
+            return [squares[a], [a, b, c]];
         }
     }
     return null;
