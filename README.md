@@ -2,6 +2,12 @@
 
 A classic game of **Tic Tac Toe**, built with modern **React**. This project features **time travel**, clean state management, and a minimal, responsive UI — ideal for showcasing fundamental React concepts like component composition, lifting state up, immutability, and conditional rendering.
 
+## 🚀 Live URL
+
+tic-tac-toe-using-react-7haabkzi1-ashiks-projects-8da90b6d.vercel.app
+
+---
+
 ## 🧩 Component Tree
 
 ```text
@@ -10,12 +16,6 @@ Game
 │   └── Square (x9)
 └── History
 ```
-
----
-
-## 📸 Screenshots
-
-![screenshot](./screenshot.png)
 
 ---
 
