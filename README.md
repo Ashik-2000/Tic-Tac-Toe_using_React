@@ -37,6 +37,8 @@ Game
 
 - 🤝 Draw detection using clean and scalable logic
 
+- ✨ Higlight winnnig cells
+
 - ♻️ Immutability with clean state updates
 
 - 🎨 Minimal and responsive UI with Tailwind CSS
